@@ -1,4 +1,6 @@
 import { SectionTitle } from "@/components/shared";
+import { Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const formations = [
   { year: "2024 – 2026", title: "BTS SIO — Option SISR", place: "Lycée Saint-Marc, Nivolas Vermelle" },
@@ -16,6 +18,15 @@ const Parcours = () => (
   <section className="py-24 px-6">
     <div className="max-w-4xl mx-auto">
       <SectionTitle label="CV" title="Mon Parcours" />
+
+      <div className="mt-8 flex justify-center">
+        <Button asChild variant="outline" size="lg">
+          <a href="/cv.pdf" download className="flex items-center gap-2">
+            <Download className="w-4 h-4" />
+            Télécharger mon CV
+          </a>
+        </Button>
+      </div>
 
       <div className="mt-12 space-y-16">
         {/* Formation */}
