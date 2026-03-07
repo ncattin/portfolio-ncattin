@@ -19,6 +19,15 @@ const Parcours = () => (
     <div className="max-w-4xl mx-auto">
       <SectionTitle label="CV" title="Mon Parcours" />
 
+      <div className="mt-8 flex justify-center">
+        <Button asChild variant="outline" size="lg">
+          <a href="/cv.pdf" download className="flex items-center gap-2">
+            <Download className="w-4 h-4" />
+            Télécharger mon CV
+          </a>
+        </Button>
+      </div>
+
       <div className="mt-12 space-y-16">
         {/* Formation */}
         <div>
