@@ -1,4 +1,6 @@
 import { SectionTitle } from "@/components/shared";
+import { Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const formations = [
   { year: "2024 – 2026", title: "BTS SIO — Option SISR", place: "Lycée Saint-Marc, Nivolas Vermelle" },
