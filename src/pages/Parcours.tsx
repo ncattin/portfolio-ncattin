@@ -21,7 +21,7 @@ const Parcours = () => (
 
       <div className="mt-8 flex justify-center">
         <Button asChild variant="outline" size="lg">
-          <a href="/Cv Cattin Nathan.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+          <a href="/portfolio-ncattin/Cv Cattin Nathan.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
             <Download className="w-4 h-4" />
             Télécharger mon CV
           </a>
