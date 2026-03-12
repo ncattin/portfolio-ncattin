@@ -5,7 +5,6 @@ import { fadeUp, SectionTitle } from "@/components/shared";
 const contacts = [
   { icon: <Mail className="w-5 h-5" />, label: "Email", value: "nathan.cattin31@gmail.com", href: "mailto:nathan.cattin31@gmail.com" },
   { icon: <Linkedin className="w-5 h-5" />, label: "LinkedIn", value: "Nathan Cattin", href: "https://fr.linkedin.com/in/nathan-cattin-4829632a1" },
-  { icon: <Github className="w-5 h-5" />, label: "GitHub", value: "ncattin", href: "https://github.com/ncattin" },
   { icon: <Phone className="w-5 h-5" />, label: "Téléphone", value: "06 78 43 16 46", href: "tel:+33678431646" },
 ];
 
