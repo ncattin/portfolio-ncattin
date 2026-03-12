@@ -14,6 +14,8 @@ const langues = [
   { lang: "Chinois", level: "Niveau B1" },
 ];
 
+const cvHref = `${import.meta.env.BASE_URL}Cv%20Cattin%20Nathan.pdf`;
+
 const Parcours = () => (
   <section className="py-24 px-6">
     <div className="max-w-4xl mx-auto">
@@ -21,7 +23,7 @@ const Parcours = () => (
 
       <div className="mt-8 flex justify-center">
         <Button asChild variant="outline" size="lg">
-          <a href="/portfolio-ncattin/Cv Cattin Nathan.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+          <a href={cvHref} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
             <Download className="w-4 h-4" />
             Télécharger mon CV
           </a>
