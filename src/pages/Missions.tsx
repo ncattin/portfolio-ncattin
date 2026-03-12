@@ -5,9 +5,9 @@ import { fadeUp, SectionTitle } from "@/components/shared";
 const missions = [
   {
     icon: <Wrench className="w-6 h-6" />,
-    title: "Maintenance & Support",
-    desc: "Diagnostic et résolution de problèmes matériels et logiciels, assistance technique aux utilisateurs",
-    tasks: ["Maintenance du parc informatique", "Support technique aux utilisateurs", "Documentation des interventions"],
+    title: "Maintenance & Support Technique",
+    desc: "Diagnostic et résolution de problèmes matériels et logiciels, traitement de tickets d'assistance pour enseignants, surveillants et administration",
+    tasks: ["Maintenance du parc informatique", "Gestion de tickets Help Desk", "Assistance utilisateurs multi-niveaux", "Résolution d'incidents matériels et logiciels", "Documentation des interventions"],
   },
   {
     icon: <Globe className="w-6 h-6" />,
@@ -32,12 +32,6 @@ const missions = [
     title: "Développement & Automatisation",
     desc: "Création d'applications web et scripts d'automatisation pour optimiser les processus d'administration système",
     tasks: ["Applications web (HTML/CSS, JavaScript, PHP)", "Scripts Python d'automatisation", "Optimisation des processus IT"],
-  },
-  {
-    icon: <Wrench className="w-6 h-6" />,
-    title: "Support Technique",
-    desc: "Traitement de nombreux tickets d'assistance pour enseignants, surveillants et membres de l'administration",
-    tasks: ["Gestion de tickets Help Desk", "Assistance utilisateurs multi-niveaux", "Résolution d'incidents matériels et logiciels"],
   },
   {
     icon: <Tablet className="w-6 h-6" />,
