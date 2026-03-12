@@ -59,9 +59,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <span>© 2025 Cattin Nathan. Tous droits réservés.</span>
           <div className="flex gap-4">
-            <a href="https://github.com/ncattin" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-              <Github className="w-4 h-4" />
-            </a>
             <a href="https://fr.linkedin.com/in/nathan-cattin-4829632a1" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
               <Linkedin className="w-4 h-4" />
             </a>
