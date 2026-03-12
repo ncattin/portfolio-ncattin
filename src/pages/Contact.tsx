@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Github, Phone } from "lucide-react";
+import { Mail, Linkedin, Phone } from "lucide-react";
 import { fadeUp, SectionTitle } from "@/components/shared";
 
 const contacts = [
