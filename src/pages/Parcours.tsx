@@ -14,6 +14,8 @@ const langues = [
   { lang: "Chinois", level: "Niveau B1" },
 ];
 
+const cvHref = `${import.meta.env.BASE_URL}Cv%20Cattin%20Nathan.pdf`;
+
 const Parcours = () => (
   <section className="py-24 px-6">
     <div className="max-w-4xl mx-auto">
