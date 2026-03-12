@@ -34,12 +34,6 @@ const missions = [
     tasks: ["Applications web (HTML/CSS, JavaScript, PHP)", "Scripts Python d'automatisation", "Optimisation des processus IT"],
   },
   {
-    icon: <Wrench className="w-6 h-6" />,
-    title: "Support Technique",
-    desc: "Traitement de nombreux tickets d'assistance pour enseignants, surveillants et membres de l'administration",
-    tasks: ["Gestion de tickets Help Desk", "Assistance utilisateurs multi-niveaux", "Résolution d'incidents matériels et logiciels"],
-  },
-  {
     icon: <Tablet className="w-6 h-6" />,
     title: "Gestion iPads — Microsoft Intune",
     desc: "Préparation d'iPads avec MacBook et intégration à Microsoft Intune pour une administration centralisée, limitant les droits élèves",
