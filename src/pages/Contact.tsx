@@ -16,7 +16,7 @@ const Contact = () => (
         N'hésitez pas à me contacter pour toute opportunité professionnelle
       </p>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid sm:grid-cols-3 gap-4">
         {contacts.map((c, i) => (
           <motion.a
             key={c.label}
