@@ -65,6 +65,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <a href="mailto:nathan.cattin31@gmail.com" className="hover:text-primary transition-colors">
               <Mail className="w-4 h-4" />
             </a>
+            <a href="tel:+33678431646" className="hover:text-primary transition-colors">
+              <Phone className="w-4 h-4" />
+            </a>
           </div>
         </div>
       </footer>
