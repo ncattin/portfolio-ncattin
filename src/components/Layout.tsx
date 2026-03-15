@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Linkedin, Mail, Menu, X } from "lucide-react";
+import { Linkedin, Mail, Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
 
 const navItems = [
