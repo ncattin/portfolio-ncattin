@@ -9,6 +9,7 @@ import Missions from "./pages/Missions";
 import Competences from "./pages/Competences";
 import Parcours from "./pages/Parcours";
 import Contact from "./pages/Contact";
+import MissionDetail from "./pages/MissionDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/missions" element={<Missions />} />
+            <Route path="/missions/:slug" element={<MissionDetail />} />
             <Route path="/competences" element={<Competences />} />
             <Route path="/parcours" element={<Parcours />} />
             <Route path="/contact" element={<Contact />} />
