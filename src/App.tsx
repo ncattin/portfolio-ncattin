@@ -9,6 +9,7 @@ import Missions from "./pages/Missions";
 import Competences from "./pages/Competences";
 import Parcours from "./pages/Parcours";
 import Contact from "./pages/Contact";
+import MissionDetail from "./pages/MissionDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
