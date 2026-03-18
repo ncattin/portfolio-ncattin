@@ -83,7 +83,6 @@ const Missions = () => (
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </Button>
-            </ul>
           </motion.div>
         ))}
       </div>
