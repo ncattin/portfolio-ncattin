@@ -69,13 +69,20 @@ const Missions = () => (
             </div>
             <h3 className="text-lg font-semibold mb-2">{mission.title}</h3>
             <p className="text-muted-foreground text-sm mb-4">{mission.desc}</p>
-            <ul className="space-y-2">
+            <ul className="space-y-2 mb-4">
               {mission.tasks.map((task) => (
                 <li key={task} className="text-sm text-muted-foreground flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary/60" />
                   {task}
                 </li>
               ))}
+            </ul>
+            <Button asChild variant="outline" size="sm" className="w-full mt-auto">
+              <Link to={`/missions/${mission.slug}`} className="flex items-center justify-center gap-2">
+                Voir les détails
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </Button>
             </ul>
           </motion.div>
         ))}
