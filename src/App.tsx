@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Missions from "./pages/Missions";
 import Competences from "./pages/Competences";
 import Parcours from "./pages/Parcours";
+import CompetenceDetail from "./pages/CompetenceDetail";
 import Contact from "./pages/Contact";
 import MissionDetail from "./pages/MissionDetail";
 import NotFound from "./pages/NotFound";
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/missions" element={<Missions />} />
             <Route path="/missions/:slug" element={<MissionDetail />} />
             <Route path="/competences" element={<Competences />} />
+            <Route path="/competences/:slug" element={<CompetenceDetail />} />
             <Route path="/parcours" element={<Parcours />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />

@@ -1,12 +1,14 @@
 import { motion } from "framer-motion";
-import { Monitor, Server, Shield, Terminal, Users, Brain, MessageSquare, Zap, Eye, RefreshCw } from "lucide-react";
+import { Monitor, Server, Shield, Terminal, Users, Brain, MessageSquare, Zap, Eye, RefreshCw, ArrowRight } from "lucide-react";
 import { fadeUp, SectionTitle } from "@/components/shared";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const techSkills = [
-  { icon: <Monitor className="w-5 h-5" />, title: "Développement Web", skills: ["HTML5 / CSS3", "JavaScript", "PHP / MySQL", "Python"] },
-  { icon: <Server className="w-5 h-5" />, title: "Systèmes", skills: ["Windows 10/11", "Windows Server", "Linux (Ubuntu/Debian)", "Active Directory"] },
-  { icon: <Shield className="w-5 h-5" />, title: "Réseaux", skills: ["TCP/IP", "Routeurs/Switchs", "VLAN", "VPN"] },
-  { icon: <Terminal className="w-5 h-5" />, title: "Outils", skills: ["Git / GitHub", "VirtualBox / VMware", "Packet Tracer", "Suite Office"] },
+  { icon: <Monitor className="w-5 h-5" />, title: "Développement Web", slug: "developpement-web", skills: ["HTML5 / CSS3", "JavaScript", "PHP / MySQL", "Python"] },
+  { icon: <Server className="w-5 h-5" />, title: "Systèmes", slug: "systemes", skills: ["Windows 10/11", "Windows Server", "Linux (Ubuntu/Debian)", "Active Directory"] },
+  { icon: <Shield className="w-5 h-5" />, title: "Réseaux", slug: "reseaux", skills: ["TCP/IP", "Routeurs/Switchs", "VLAN", "VPN"] },
+  { icon: <Terminal className="w-5 h-5" />, title: "Outils", slug: "outils", skills: ["Git / GitHub", "VirtualBox / VMware", "Packet Tracer", "Suite Office"] },
 ];
 
 const softSkills = [
@@ -37,13 +39,19 @@ const Competences = () => (
               <div className="text-primary">{cat.icon}</div>
               <h3 className="font-semibold">{cat.title}</h3>
             </div>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 mb-4">
               {cat.skills.map((skill) => (
                 <span key={skill} className="px-3 py-1.5 rounded-md bg-secondary text-secondary-foreground text-xs font-mono">
                   {skill}
                 </span>
               ))}
             </div>
+            <Button asChild variant="outline" size="sm" className="w-full">
+              <Link to={`/competences/${cat.slug}`} className="flex items-center justify-center gap-2">
+                Voir les détails
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </Button>
           </motion.div>
         ))}
       </div>
