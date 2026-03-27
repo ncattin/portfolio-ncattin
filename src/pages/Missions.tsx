@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
-import { Wrench, Globe, Code, Shield, Monitor, Tablet, ArrowRight } from "lucide-react";
+import { Wrench, Globe, Code, Shield, Monitor, Tablet, ArrowRight, FolderKanban, Network, Server } from "lucide-react";
 import { fadeUp, SectionTitle } from "@/components/shared";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-
 const missions = [
   {
     icon: <Wrench className="w-6 h-6" />,
