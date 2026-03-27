@@ -48,6 +48,23 @@ const missions = [
   },
 ];
 
+const projets = [
+  {
+    icon: <Network className="w-6 h-6" />,
+    title: "Infrastructure Réseau — Télétravail VPN",
+    slug: "infra-teletravail-vpn",
+    desc: "Conception d'une infrastructure réseau permettant à deux clients distants de se connecter à leurs VM dédiées via VPN, avec segmentation VLAN, règles de pare-feu et accès RDP sécurisé.",
+    tags: ["VPN", "VLAN", "Pare-feu", "RDP", "Debian", "Windows"],
+  },
+  {
+    icon: <Server className="w-6 h-6" />,
+    title: "Infrastructure PME — Active Directory & GLPI",
+    slug: "infra-pme-ad-glpi",
+    desc: "Mise en place d'une infrastructure complète pour une PME avec Active Directory, GLPI et GLPI Inventory, incluant la synchronisation AD/GLPI et la gestion des rôles utilisateurs.",
+    tags: ["Active Directory", "GLPI", "GLPI Inventory", "GPO", "Ticketing"],
+  },
+];
+
 const Missions = () => (
   <section className="py-24 px-6">
     <div className="max-w-6xl mx-auto">
@@ -84,6 +101,52 @@ const Missions = () => (
             </Button>
           </motion.div>
         ))}
+      </div>
+
+      {/* Section Projets */}
+      <div className="mt-20">
+        <motion.div
+          className="flex items-center gap-3 mb-8"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <FolderKanban className="w-6 h-6 text-primary" />
+          <h2 className="text-2xl md:text-3xl font-bold">Projets</h2>
+        </motion.div>
+        <div className="grid md:grid-cols-2 gap-6">
+          {projets.map((projet, i) => (
+            <motion.div
+              key={projet.title}
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              custom={i}
+              className="rounded-xl border border-border bg-card p-6 card-hover"
+            >
+              <div className="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4">
+                {projet.icon}
+              </div>
+              <h3 className="text-lg font-semibold mb-2">{projet.title}</h3>
+              <p className="text-muted-foreground text-sm mb-4">{projet.desc}</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {projet.tags.map((tag) => (
+                  <span key={tag} className="text-xs px-2.5 py-1 rounded-full border border-primary/30 bg-primary/5 text-primary">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <Button asChild variant="outline" size="sm" className="w-full">
+                <Link to={`/projets/${projet.slug}`} className="flex items-center justify-center gap-2">
+                  Voir les détails
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </Button>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </div>
   </section>

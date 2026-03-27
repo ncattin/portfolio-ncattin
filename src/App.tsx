@@ -11,6 +11,7 @@ import Parcours from "./pages/Parcours";
 import CompetenceDetail from "./pages/CompetenceDetail";
 import Contact from "./pages/Contact";
 import MissionDetail from "./pages/MissionDetail";
+import ProjectDetail from "./pages/ProjectDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
